@@ -1,10 +1,12 @@
-let Number = Math.floor(Math.random() * 100) + 1;
 
+
+function ADIVINHA() {
+    let Number = Math.floor(Math.random() * 100) + 1;
 var tentativa = 0 ;
 var contador = 0 ;
 
 while (tentativa !== Number ) {
-    tentativa = prompt("Por favor, insira um número inteiro de 1 a 100:"+ Number );
+    tentativa = prompt("Adivinhe qual é o numero de 0 a 100, você terá 10 tentativas:");
     contador ++;
     if (tentativa == Number) {
         alert("Você acertou com "+ contador + " tentativas, parabens !!!!")
@@ -18,4 +20,5 @@ while (tentativa !== Number ) {
     } else {
         alert("Tente um numero maior !!")
     }
+}
 }
